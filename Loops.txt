@@ -1,0 +1,167 @@
+Loops:- 
+Loops are of 2 Types
+1. Range Based Loop
+2. Condition Based Loop
+Q)what is a number?
+   number is a digit or combination of Digits 
+   1. Single Digit no   0-9
+   2. Double digit no   23,46,78
+   3. Triple Digit no    234,567,876
+   4.  4 Digit no          4567
+               Th  H T   u	
+	4  5   6  7
+   4 thousnad 5 Hundred sixy seven
+Q)wap to identify the units place digit? 
+    4567
+      o/p:- 7
+Q)waq to find the sum of the digits of the given no?
+          4532
+          4+5+3+2
+       o/p:- 14
+Q)wap to find the sum of the squares of the digits for the given no?
+          321
+         9+4+1=14
+Q)wap to find the sum of the cubes of the digits?
+       153
+         3    3	   3
+       1  +5 +3 =153
+Q)wap to check whether the  given no is Armstrong no or not?
+   Armstrong means sum of the cubes of the digits is equal to given no then tht no is called as
+   Armstrong no
+     153 is    Armstrong no
+ Q)wap to reverse the given 4 digit no?
+      1432
+      reverse no is 2341
+Q)wap to check wheteher the given no is palindrome or not?
+     palindrome means given no is equal to reverse no 
+            1441 is plaindrome
+Q)wap to find the sum of middle digits ?
+        1456
+            4+5=9
+Q)wap to find the sum of first digit and last digit ?
+         1456
+           1+6=7
+Q)wap to find the sum of even digits?
+       1456
+            4+6=10
+Q)wap to find the sum of odd digits?
+       1456
+            1+5=6
+Q)what is the difference between / and %?
+    / will gives us quotient
+   % will gives us remainder
+    no%10 is used to identify the units place digit
+    no/10  is used seperate the units place digit from the given no
+Q)wap to find the units place digit for the given 4 digit no?
+<html>
+<head>
+ <script type="text/javascript">
+   var no=4352;
+   var r=no%10;
+   document.write(r);
+ </script>				
+</head>				
+</html>				
+Q)wap to find the sum of the digits for the given 4 digit no?
+	4325
+solution:-
+  4325%10
+   						10)4325(432
+    r=no%10;					     4320
+    sum=sum+r;					   ----------
+   no=no/10;					        5
+
+						10)432(43
+    r=no%10;					     43
+    sum=sum+r;					   ----------
+   no=no/10;					        2
+						10)43(4
+    r=no%10;					     4
+    sum=sum+r;					   ----------
+   no=no/10;					       3
+
+						10)4(0
+    r=no%10;					     0
+    sum=sum+r;					   ----------
+   no=no/10;					      4
+
+Ex:-
+<html>
+<head>
+ <script type="text/javascript">
+   var no=4325;
+   var r=0;
+   var sum=0;
+   for(var i=1;i<=4;i++)
+   {
+       r=no%10;
+       sum=sum+r;
+       no=Math.floor(no/10);
+   }
+   document.write(sum);
+ </script>				
+</head>				
+</html>				
+Q)wap to check whether the  given no is Armstrong no or not?
+    Armstrong no means sum of the cubes of the digits is equal to given no
+<html>
+<head>
+ <script type="text/javascript">	
+   var no=153;   var t=no;
+   var r=0;   var cube=0; var sum=0;
+   for(var i=1;i<=3;i++)
+   {
+      r=no%10;  
+      cube=r*r*r;
+      sum=sum+cube;
+       no=Math.floor(no/10);
+   }
+   if(t==sum)
+     document.write("Armstrong no");
+   else
+   document.write("Not a Armstrong no");
+ </script>				
+</head>				
+</html>				
+Q)program to find sum of middele digits?
+<html>
+<head>
+ <script type="text/javascript">	
+   var no=1534;   var r=0;   var sum=0;
+   for(var i=1;i<=4;i++)
+   {
+       r=no%10;
+        if(i==2 || i==3)
+        {
+                sum=sum+r;
+         }
+      no=Math.floor(no/10);   
+   }
+    document.write(sum);
+ </script>				
+</head>				
+</html>				
+					
+	
+https://www.cloudhadoop.com/2018/10/angular-button-click-event-examples.html
+
+					
+	
+
+ 			
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
